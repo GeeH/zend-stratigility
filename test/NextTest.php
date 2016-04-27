@@ -60,7 +60,7 @@ class NextTest extends TestCase
         $next($request, $response);
         $this->assertTrue($triggered);
 
-        $this->assertStringEndsWith('Yahoo', 'This is now working, Yahoo');
+        $this->assertStringEndsWith('Yippee', 'This is now working, Yippee');
     }
 
     public function testInvokesItselfWhenRouteDoesNotMatchCurrentUrl()
