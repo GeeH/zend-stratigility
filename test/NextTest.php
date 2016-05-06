@@ -82,8 +82,6 @@ class NextTest extends TestCase
         $next = new Next($this->queue, $done);
         $next($this->request, $this->response);
         $this->assertTrue($triggered);
-
-        $this->assertTrue(true);
     }
 
     public function testInvokesItselfIfRouteDoesNotMatchAtABoundary()
